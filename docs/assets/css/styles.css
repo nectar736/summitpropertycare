@@ -868,6 +868,11 @@ h4 { font-size: 1.25rem; }
     font-size: 0.9375rem;
   }
 
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
   .contact-details {
     gap: 1.25rem;
   }
