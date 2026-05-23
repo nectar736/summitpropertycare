@@ -2036,6 +2036,217 @@ h4 { font-size: 1.25rem; }
   outline-offset: 2px;
 }
 
+/* =============================================
+    Blog — Natural/Earthy Editorial
+    ============================================= */
+
+/* -- Blog Index (Card List) -- */
+
+.blog-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blog-post-card {
+  position: relative;
+  padding: 2rem 2rem 2rem 2.5rem;
+  border-bottom: 1px solid var(--color-neutral-200);
+  transition: background-color var(--transition-base);
+  border-left: 3px solid transparent;
+}
+
+.blog-post-card:last-child {
+  border-bottom: none;
+}
+
+.blog-post-card:hover {
+  border-left-color: var(--color-primary);
+  background-color: var(--color-neutral-100);
+}
+
+.blog-post-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-post-title a {
+  color: var(--color-neutral-900);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.blog-post-title a:hover {
+  color: var(--color-primary);
+}
+
+.blog-post-meta {
+  font-size: 0.875rem;
+  color: var(--color-neutral-500);
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.02em;
+}
+
+.blog-post-excerpt {
+  color: var(--color-neutral-700);
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}
+
+.blog-post-link {
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: gap var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.blog-post-link:hover {
+  gap: 0.5rem;
+}
+
+/* -- Blog Post Article -- */
+
+.blog-post-header {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding: 3rem 0 2rem;
+  background: linear-gradient(135deg, var(--color-neutral-100) 0%, var(--color-white) 100%);
+  border-top: 4px solid var(--color-primary);
+  text-align: center;
+}
+
+.blog-post-header h1 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  line-height: 1.3;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* -- Blog Post Body -- */
+
+.blog-post-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+.blog-post-content > p:first-child {
+  font-size: 1.125rem;
+  color: var(--color-neutral-800);
+  line-height: 1.9;
+}
+
+.blog-post-content p {
+  color: var(--color-neutral-700);
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+  font-size: 1.0625rem;
+}
+
+.blog-post-content h2 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-neutral-900);
+  border-left: 3px solid var(--color-accent);
+  padding-left: 1rem;
+}
+
+.blog-post-content h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-neutral-900);
+}
+
+.blog-post-content ul {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.blog-post-content li {
+  color: var(--color-neutral-700);
+  line-height: 1.8;
+  margin-bottom: 0.25rem;
+}
+
+.blog-post-content a {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+/* -- Override for buttons inside blog content -- */
+.blog-post-content .btn--primary {
+  color: var(--color-white);
+}
+
+/* -- Blog Post CTA (matches site cta-box style) -- */
+
+.blog-post-cta {
+  margin-top: 3rem;
+  padding: 2.5rem 2rem;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  border-radius: var(--radius-xl);
+  text-align: center;
+}
+
+.blog-post-cta p {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.blog-post-cta strong {
+  color: var(--color-white);
+  font-size: 1.25rem;
+}
+
+.blog-post-cta .btn--primary {
+  background-color: var(--color-accent);
+  color: var(--color-neutral-900);
+  font-weight: 700;
+}
+
+.blog-post-cta .btn--primary:hover {
+  background-color: var(--color-accent-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 768px) {
+  .blog-post-header {
+    padding: 2rem 1rem;
+  }
+
+  .blog-post-cta {
+    padding: 2rem 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-post-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .blog-post-content p {
+    font-size: 1rem;
+  }
+
+  .blog-post-content h2 {
+    font-size: 1.25rem;
+  }
+
+  .blog-post-card {
+    padding: 1.25rem 1.25rem 1.25rem 1.5rem;
+  }
+}
+
 /* Skip link */
 .skip-link {
   position: absolute;
